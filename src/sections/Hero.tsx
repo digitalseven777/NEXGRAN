@@ -15,7 +15,7 @@ export function Hero() {
             <span className="line"><span>Fulget mineral</span></span>
             <span className="line"><span>aplicado</span></span>
             <span className="line"><span>diretamente</span></span>
-            <span className="line"><span>na obra.</span></span>
+            <span className="line"><span>no local.</span></span>
           </h1>
           <p className="hero-sub">{hero.subtitle}</p>
           {site.serviceRegion && <p className="hero-region">Atendimento: {site.serviceRegion}</p>}

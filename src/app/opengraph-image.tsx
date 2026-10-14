@@ -18,7 +18,7 @@ export default function OpengraphImage() {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           <div style={{ width: 96, height: 6, background: "#D87542" }} />
-          <div style={{ fontSize: 60, fontWeight: 700, lineHeight: 1.05 }}>Fulget mineral aplicado diretamente na obra.</div>
+          <div style={{ fontSize: 60, fontWeight: 700, lineHeight: 1.05 }}>Fulget mineral aplicado diretamente no local.</div>
           <div style={{ fontSize: 28, color: "#A9AEB1" }}>FULGET E REVESTIMENTOS MINERAIS</div>
         </div>
       </div>

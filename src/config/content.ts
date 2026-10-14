@@ -26,7 +26,7 @@ export const whatsappMessages = {
 export type WhatsappContext = keyof typeof whatsappMessages;
 
 export const hero = {
-  title: "Fulget mineral aplicado diretamente na obra.",
+  title: "Fulget mineral aplicado diretamente no local.",
   subtitle:
     "Fulget cimentício e revestimentos minerais aplicados diretamente na obra, com acabamento, resistência e estética arquitetônica.",
   primaryCta: "Solicitar orçamento",
