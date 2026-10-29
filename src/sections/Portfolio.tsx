@@ -19,9 +19,9 @@ export function Portfolio() {
                 </div>
                 <h3>{p.title}</h3>
                 <dl>
-                  <div><dt>Local</dt><dd>{p.location}</dd></div>
+                  {p.location !== "Local não informado" && <div><dt>Local</dt><dd>{p.location}</dd></div>}
                   <div><dt>Aplicação</dt><dd>{p.application}</dd></div>
-                  <div><dt>Área</dt><dd>{p.area}</dd></div>
+                  {p.area !== "Sob consulta" && <div><dt>Área</dt><dd>{p.area}</dd></div>}
                   <div><dt>Acabamento</dt><dd>{p.finish}</dd></div>
                 </dl>
               </li>

@@ -111,9 +111,9 @@ export const process = {
 
 export const portfolio = {
   title: "Projetos",
-  emptyTitle: "Portfólio em construção",
+  emptyTitle: "Aplicações realizadas pela NEXGRAN",
   emptyText:
-    "A NEXGRAN está reunindo os registros dos seus próprios trabalhos. Em breve, cada projeto será apresentado aqui com fotos reais, local, aplicação, área e acabamento.",
+    "Veja exemplos de fulget e revestimentos minerais aplicados pela equipe diretamente no local da obra. Cada superfície é preparada e executada conforme as características do projeto.",
   emptyCta: "Falar sobre o meu projeto",
   fields: ["Projeto", "Local", "Aplicação", "Área", "Acabamento"],
 };

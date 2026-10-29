@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   title: site.seo.title,
   description,
   applicationName: site.brandName,
+  keywords: ["aplicação de fulget", "fulget cimentício", "fulget aplicado no local", "revestimento mineral", "piso fulget", "aplicação de fulget em escada", "NEXGRAN"],
+  ...(site.googleSiteVerification ? { verification: { google: site.googleSiteVerification } } : {}),
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",

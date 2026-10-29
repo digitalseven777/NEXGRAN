@@ -23,7 +23,7 @@ export function Applications() {
             </li>
           ))}
         </ul>
-        <p className="app-note">Imagens ilustrativas de textura. Fotos de obras reais da NEXGRAN serão adicionadas conforme os projetos forem registrados.</p>
+        <p className="app-note">Fotos de aplicações realizadas pela NEXGRAN. O fulget é executado diretamente no local, após avaliação e preparação da superfície.</p>
         <div className="cta-row">
           <QuoteLink location="aplicacoes" variant="primary">{applications.cta}</QuoteLink>
         </div>

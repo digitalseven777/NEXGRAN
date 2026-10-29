@@ -4,10 +4,10 @@
  */
 
 /** Número do WhatsApp em formato internacional, apenas dígitos. Ex.: "5511912345678". */
-export const WHATSAPP_NUMBER = "";
+export const WHATSAPP_NUMBER = "5511966939916";
 
 /** Região de atendimento real (ex.: "Grande São Paulo"). Vazio = não é exibida nem entra no SEO. */
-export const SERVICE_REGION = "";
+export const SERVICE_REGION = "São Paulo e região";
 
 export const site = {
   brandName: "NEXGRAN",
@@ -17,15 +17,16 @@ export const site = {
   whatsapp: WHATSAPP_NUMBER,
   serviceRegion: SERVICE_REGION,
   email: "",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nexgran.vercel.app",
+  googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION ?? "",
   /** Dados legais: só aparecem no rodapé quando preenchidos. */
   legal: { cnpj: "", address: "", city: "" },
   /** Se preenchido, o formulário envia os dados (e fotos) para este endpoint antes de abrir o WhatsApp. */
   formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "",
   seo: {
-    title: "NEXGRAN | Fulget e Revestimentos Minerais",
+    title: "Aplicação de Fulget no Local da Obra | NEXGRAN",
     description:
-      "Fulget cimentício e revestimentos minerais aplicados diretamente na obra. Soluções para áreas externas, calçadas, entradas, garagens, áreas de lazer e projetos arquitetônicos.",
+      "Aplicação de fulget cimentício feita diretamente no local da obra. Revestimentos minerais para calçadas, entradas, garagens, escadas, varandas e áreas comerciais. Solicite um orçamento à NEXGRAN.",
   },
 } as const;
 

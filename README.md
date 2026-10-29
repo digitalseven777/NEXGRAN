@@ -29,6 +29,10 @@ npm run build && npm start   # versão de produção
 
 ## Tracking (Analytics, GTM, Meta Pixel)
 
+## SEO e Google Search Console
+
+O site publicado usa `https://nexgran.vercel.app`. O sitemap fica em `/sitemap.xml` e o robots.txt aponta para ele. Para validar a propriedade pelo método de meta tag, adicione a URL-prefix `https://nexgran.vercel.app/` no Google Search Console, copie o valor de verificação para `GOOGLE_SITE_VERIFICATION` e publique novamente. Depois envie `https://nexgran.vercel.app/sitemap.xml` no Search Console e solicite a indexação da página inicial. A verificação e o rastreamento exigem o site publicado; a exibição nos resultados orgânicos depende dos sistemas do Google e não é imediata nem garantida. SEO orgânico não cria anúncios pagos no Google Ads.
+
 Copie `.env.example` para `.env.local` e preencha só o que for usar:
 
 - `NEXT_PUBLIC_GTM_ID` → Google Tag Manager
