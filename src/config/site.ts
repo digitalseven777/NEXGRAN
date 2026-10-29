@@ -18,7 +18,7 @@ export const site = {
   serviceRegion: SERVICE_REGION,
   email: "",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nexgran.vercel.app",
-  googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION ?? "",
+  googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION ?? "BNTIs6jFzXoojC1aET2VAHivIkMU7SzfS2Gt4RWZ-II",
   /** Dados legais: só aparecem no rodapé quando preenchidos. */
   legal: { cnpj: "", address: "", city: "" },
   /** Se preenchido, o formulário envia os dados (e fotos) para este endpoint antes de abrir o WhatsApp. */
