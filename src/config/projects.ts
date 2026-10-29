@@ -24,12 +24,12 @@ export const projects: Project[] = [
     image: { src: "/images/obras/fulget-piso-residencial.jpg", alt: "Piso residencial em fulget cinza aplicado no local em condomínio de Cotia" },
   },
   {
-    title: "Residência do MC Paiva no Condomínio Oruam",
-    location: "Condomínio Oruam",
+    title: "Residência do MC Paiva no Condomínio Aruã",
+    location: "Condomínio Aruã",
     application: "Piso externo, acesso e área de garagem",
     area: "Sob consulta",
     finish: "Agregados minerais em tom cinza",
-    image: { src: "/images/obras/residencia-condominio-oruam.jpg", alt: "Residência no Condomínio Oruam com piso de fulget aplicado na entrada e acesso da garagem" },
+    image: { src: "/images/obras/residencia-condominio-oruam.jpg", alt: "Residência no Condomínio Aruã com piso de fulget aplicado na entrada e acesso da garagem" },
   },
   {
     title: "Circulação em espaço comercial",
