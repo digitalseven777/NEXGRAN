@@ -15,7 +15,7 @@ export function Portfolio() {
             {projects.map((p) => (
               <li key={p.title} className="proj-card">
                 <div className="proj-media">
-                  <Image src={p.image.src} alt={p.image.alt} fill sizes="(min-width:1024px) 33vw, 100vw" className="media-img" />
+                  <Image src={p.image.src} alt={p.image.alt} fill sizes="(min-width:1024px) 33vw, 100vw" unoptimized className="media-img" />
                 </div>
                 <h3>{p.title}</h3>
                 <dl>

@@ -18,7 +18,7 @@ type Props = {
  */
 export function MediaFrame({ slot, seed = 0, sizes = "100vw", priority = false, className = "", quiet = false }: Props) {
   if (slot.src) {
-    return <Image src={slot.src} alt={slot.alt} fill sizes={sizes} priority={priority} className={`media-img ${className}`} />;
+    return <Image src={slot.src} alt={slot.alt} fill sizes={sizes} priority={priority} unoptimized className={`media-img ${className}`} />;
   }
   const ox = (seed * 73) % 360;
   const oy = (seed * 131) % 360;
