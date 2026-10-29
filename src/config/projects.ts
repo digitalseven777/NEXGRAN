@@ -16,24 +16,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Entrada residencial em fulget",
-    location: "Local não informado",
-    application: "Piso externo e escada",
+    title: "Piso residencial em fulget",
+    location: "Condomínio em Cotia",
+    application: "Piso residencial",
     area: "Sob consulta",
     finish: "Fulget cimentício cinza aplicado no local",
-    image: { src: "/images/obras/fulget-escada-entrada.jpg", alt: "Piso e escada de entrada residencial revestidos com fulget cinza" },
+    image: { src: "/images/obras/fulget-piso-residencial.jpg", alt: "Piso residencial em fulget cinza aplicado no local em condomínio de Cotia" },
   },
   {
-    title: "Caminho de jardim com degraus",
-    location: "Local não informado",
-    application: "Degraus externos em área ajardinada",
+    title: "Entrada residencial no Condomínio Oruam",
+    location: "Condomínio Oruam",
+    application: "Piso externo, acesso e área de garagem",
     area: "Sob consulta",
     finish: "Agregados minerais em tom cinza",
-    image: { src: "/images/obras/escada-jardim-fulget.jpg", alt: "Degraus largos de fulget em caminho de jardim residencial" },
+    image: { src: "/images/obras/residencia-condominio-oruam.jpg", alt: "Residência no Condomínio Oruam com piso de fulget aplicado na entrada e acesso da garagem" },
   },
   {
     title: "Circulação em espaço comercial",
-    location: "Local não informado",
+    location: "Shopping Santana",
     application: "Faixa de circulação comercial",
     area: "Sob consulta",
     finish: "Fulget mineral em tom claro",

@@ -18,12 +18,12 @@ const slot = (alt: string, texture: TextureVariant): ImageSlot => ({ src: null, 
 
 export const images = {
   hero: { src: "/images/obras/fulget-entrada-residencial.jpg", alt: "Entrada residencial com piso de fulget aplicado no local pela NEXGRAN", texture: "pedra" as const },
-  positioning: { src: "/images/obras/fulget-varanda-agregado.jpg", alt: "Detalhe de piso mineral com agregados aplicado em varanda", texture: "quente" as const },
+  positioning: { src: "/images/obras/fulget-piso-residencial-detalhe.jpg", alt: "Detalhe dos agregados minerais em piso de fulget residencial", texture: "quente" as const },
   applications: {
     externas: { src: "/images/obras/fulget-entrada-residencial.jpg", alt: "Piso de fulget em entrada residencial", texture: "pedra" as const },
-    calcadas: { src: "/images/obras/piso-fulget-comercial.jpg", alt: "Faixa de circulação com fulget aplicado em espaço comercial", texture: "claro" as const },
+    calcadas: { src: "/images/obras/calcada-fulget.jpg", alt: "Calçada revestida com fulget cinza aplicado diretamente no local", texture: "claro" as const },
     entradas: { src: "/images/obras/escada-jardim-fulget.jpg", alt: "Degraus de fulget em entrada residencial ajardinada", texture: "quente" as const },
-    garagens: { src: "/images/obras/fulget-escada-entrada.jpg", alt: "Piso e escada revestidos com fulget cimentício", texture: "grafite" as const },
+    garagens: { src: "/images/obras/residencia-condominio-oruam.jpg", alt: "Entrada residencial ampla com piso de fulget, adequada para acesso de garagem", texture: "grafite" as const },
     quintais: slot("Quintal com superfície de fulget", "claro"),
     lazer: { src: "/images/obras/fulget-varanda-agregado.jpg", alt: "Piso mineral aplicado em área de lazer", texture: "pedra" as const },
     piscina: slot("Entorno de piscina com fulget", "quente"),
