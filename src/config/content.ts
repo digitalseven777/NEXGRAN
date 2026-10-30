@@ -15,11 +15,11 @@ export const footerLinks = [...nav, { label: "Orçamento", href: "#orcamento" }]
 export const whatsappMessages = {
   header: "Olá! Conheci a NEXGRAN pelo site e gostaria de solicitar um orçamento de fulget.",
   hero: "Olá! Conheci a NEXGRAN pelo site e gostaria de solicitar um orçamento de fulget.",
-  solutions: "Olá! Vi as soluções da NEXGRAN no site e gostaria de conversar sobre a aplicação de fulget na minha obra.",
+  solutions: "Olá! Vi as soluções da NEXGRAN no site e gostaria de conversar sobre a aplicação de fulget no meu projeto.",
   applications: "Olá! Vi as aplicações no site da NEXGRAN e gostaria de um orçamento para a minha área.",
   portfolio: "Olá! Gostaria de ver trabalhos da NEXGRAN e conversar sobre um orçamento de fulget.",
-  quote: "Olá! Estou na página de orçamento da NEXGRAN e prefiro conversar diretamente pelo WhatsApp sobre a minha obra.",
-  finalCta: "Olá! Gostaria de enviar os detalhes da minha obra para a NEXGRAN avaliar a aplicação de fulget.",
+  quote: "Olá! Estou na página de orçamento da NEXGRAN e prefiro conversar diretamente pelo WhatsApp sobre o meu projeto.",
+  finalCta: "Olá! Gostaria de enviar os detalhes do meu projeto para a NEXGRAN avaliar a aplicação de fulget.",
   floating: "Olá! Conheci a NEXGRAN pelo site e gostaria de solicitar um orçamento de fulget.",
   footer: "Olá! Gostaria de falar com a NEXGRAN sobre fulget e revestimentos minerais.",
 } as const;
@@ -28,15 +28,15 @@ export type WhatsappContext = keyof typeof whatsappMessages;
 export const hero = {
   title: "Fulget mineral aplicado diretamente no local.",
   subtitle:
-    "Fulget cimentício e revestimentos minerais aplicados diretamente na obra, com acabamento, resistência e estética arquitetônica.",
+    "Fulget cimentício e revestimentos minerais aplicados diretamente no local, com acabamento, resistência e estética arquitetônica.",
   primaryCta: "Solicitar orçamento",
   secondaryCta: "Ver aplicações",
-  facts: ["Aplicação direta na obra", "Paginação com filetes e juntas", "Agregados minerais aparentes"],
+  facts: ["Aplicação direta no local", "Paginação com filetes e juntas", "Agregados minerais aparentes"],
 };
 
 export const positioning = {
   title: "Acabamento mineral. Execução precisa.",
-  text: "A NEXGRAN atua na aplicação de fulget cimentício e revestimentos minerais diretamente na obra, criando superfícies contínuas, resistentes e integradas ao projeto arquitetônico.",
+  text: "A NEXGRAN aplica fulget cimentício e revestimentos minerais diretamente no local, criando superfícies contínuas, resistentes e integradas ao projeto arquitetônico.",
   note: "Não vendemos placas nem pisos prontos. O fulget é aplicado no local, sobre a superfície preparada, e a paginação é definida junto com o projeto.",
 };
 
@@ -79,7 +79,7 @@ export const differentials = {
   title: "Por que a NEXGRAN",
   items: [
     {
-      title: "Aplicação direta na obra",
+      title: "Aplicação direta no local",
       text: "O acabamento é executado diretamente sobre a superfície preparada, permitindo integração ao projeto.",
     },
     {
@@ -103,24 +103,24 @@ export const process = {
     { title: "Análise da área", text: "Entendimento do espaço, superfície existente, finalidade e características do projeto." },
     { title: "Definição da solução", text: "Avaliação do acabamento, paginação, juntas e composição adequada." },
     { title: "Preparação", text: "Preparação da base para receber o sistema de acabamento." },
-    { title: "Aplicação", text: "Aplicação do fulget diretamente na obra." },
+    { title: "Aplicação", text: "Aplicação do fulget diretamente no local." },
     { title: "Acabamento", text: "Tratamento final da superfície para entregar o resultado especificado." },
   ],
-  note: "Prazos e etapas são definidos após a avaliação da obra.",
+  note: "Prazos e etapas são definidos após a avaliação do local.",
 };
 
 export const portfolio = {
   title: "Projetos",
   emptyTitle: "Aplicações realizadas pela NEXGRAN",
   emptyText:
-    "Veja exemplos de fulget e revestimentos minerais aplicados pela equipe diretamente no local da obra. Cada superfície é preparada e executada conforme as características do projeto.",
+    "Veja exemplos de fulget e revestimentos minerais aplicados pela equipe diretamente no local. Cada superfície é preparada e executada conforme as características do projeto.",
   emptyCta: "Falar sobre o meu projeto",
   fields: ["Projeto", "Local", "Aplicação", "Área", "Acabamento"],
 };
 
 export const quote = {
   title: "Seu projeto começa aqui.",
-  text: "Envie algumas informações sobre sua obra e nossa equipe entrará em contato para entender o projeto e orientar os próximos passos.",
+  text: "Envie algumas informações sobre seu projeto e nossa equipe entrará em contato para entender o local e orientar os próximos passos.",
   environments: ["Calçada", "Entrada", "Garagem", "Quintal", "Área de piscina", "Área de lazer", "Comercial", "Outro"],
   submit: "Solicitar orçamento",
   whatsappCta: "Falar diretamente pelo WhatsApp",
@@ -132,15 +132,15 @@ export const faq = {
   items: [
     {
       q: "O que é fulget?",
-      a: "Fulget é um acabamento à base de cimento com agregados minerais aparentes, que forma uma superfície texturizada. É muito usado em áreas externas e de circulação. O resultado final depende dos agregados, da paginação e da preparação da superfície de cada obra.",
+      a: "Fulget é um acabamento à base de cimento com agregados minerais aparentes, que forma uma superfície texturizada. É muito usado em áreas externas e de circulação. O resultado final depende dos agregados, da paginação e da preparação de cada local.",
     },
     {
-      q: "O fulget é aplicado diretamente na obra?",
+      q: "O fulget é aplicado diretamente no local?",
       a: "Sim. A NEXGRAN não trabalha com placas pré-moldadas: o fulget cimentício é aplicado no local, sobre a superfície preparada, com filetes e juntas que organizam a paginação da área.",
     },
     {
       q: "Em quais ambientes o fulget pode ser utilizado?",
-      a: "Calçadas, entradas, garagens, quintais, áreas de lazer, entornos de piscina, áreas externas em geral e alguns espaços comerciais. A viabilidade em cada caso é confirmada na avaliação da obra.",
+      a: "Calçadas, entradas, garagens, quintais, áreas de lazer, entornos de piscina, áreas externas em geral e alguns espaços comerciais. A viabilidade em cada caso é confirmada na avaliação do local.",
     },
     {
       q: "É possível escolher a aparência dos agregados?",
@@ -148,26 +148,26 @@ export const faq = {
     },
     {
       q: "Como funciona o orçamento?",
-      a: "Você envia as informações da obra pelo formulário ou pelo WhatsApp: cidade, tipo de ambiente, área aproximada e observações. A equipe entra em contato para entender o projeto e orientar os próximos passos. Valores dependem da avaliação da área.",
+      a: "Você envia as informações do projeto pelo formulário ou pelo WhatsApp: cidade, tipo de ambiente, área aproximada e observações. A equipe entra em contato para entender o local e orientar os próximos passos. Valores dependem da avaliação da área.",
     },
     {
       q: "É necessário enviar fotos da área?",
-      a: "Não é obrigatório, mas ajuda bastante. Fotos mostram o estado da superfície e o contexto da obra, e permitem uma orientação inicial mais precisa. Você pode enviá-las pelo WhatsApp.",
+      a: "Não é obrigatório, mas ajuda bastante. Fotos mostram o estado da superfície e o contexto do local, e permitem uma orientação inicial mais precisa. Você pode enviá-las pelo WhatsApp.",
     },
     {
-      q: "Vocês atendem arquitetos e profissionais de obra?",
+      q: "Vocês atendem arquitetos e profissionais da construção?",
       a: "Sim. A NEXGRAN atende proprietários, arquitetos, designers de interiores, engenheiros, construtoras e empreiteiros, com atenção à especificação e à integração do acabamento ao projeto.",
     },
     {
       q: "Como funciona a preparação da superfície?",
-      a: "A base precisa estar preparada para receber o sistema de acabamento. O que é necessário em cada caso depende do estado e do tipo da superfície existente, e é definido na avaliação da obra.",
+      a: "A base precisa estar preparada para receber o sistema de acabamento. O que é necessário em cada caso depende do estado e do tipo da superfície existente, e é definido na avaliação do local.",
     },
   ],
 };
 
 export const finalCta = {
   title: "Pronto para transformar a superfície do seu projeto?",
-  text: "Envie os detalhes da sua obra. A NEXGRAN avalia a aplicação e orienta você sobre os próximos passos.",
+  text: "Envie os detalhes do seu projeto. A NEXGRAN avalia o local e orienta você sobre os próximos passos.",
   primary: "Solicitar orçamento",
   secondary: "WhatsApp",
 };

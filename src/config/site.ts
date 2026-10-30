@@ -26,7 +26,7 @@ export const site = {
   seo: {
     title: "Aplicação de Fulget no Local da Obra | NEXGRAN",
     description:
-      "Aplicação de fulget cimentício feita diretamente no local da obra. Revestimentos minerais para calçadas, entradas, garagens, escadas, varandas e áreas comerciais. Solicite um orçamento à NEXGRAN.",
+      "Aplicação de fulget cimentício feita diretamente no local. Revestimentos minerais para calçadas, entradas, garagens, escadas, varandas e áreas comerciais. Solicite um orçamento à NEXGRAN.",
   },
 } as const;
 

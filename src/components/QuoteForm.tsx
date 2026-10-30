@@ -64,7 +64,7 @@ export function QuoteForm() {
             ? "Seus dados não foram enviados. Você pode mandar as mesmas informações direto pelo WhatsApp."
             : hasEndpoint
               ? "A equipe da NEXGRAN vai entrar em contato para entender o projeto. Se quiser adiantar, continue pelo WhatsApp."
-              : "A mensagem já está preenchida com os dados da sua obra. Se o WhatsApp não abriu, use o botão abaixo."}
+              : "A mensagem já está preenchida com os dados do seu projeto. Se o WhatsApp não abriu, use o botão abaixo."}
         </p>
         <a className="btn btn--primary" href={waLink} target="_blank" rel="noopener noreferrer" onClick={() => track("click_whatsapp", { location: "form-result" })}>
           <WhatsAppIcon />
