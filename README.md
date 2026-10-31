@@ -46,10 +46,9 @@ Sem IDs, nada é carregado.
 
 ## Formulário
 
-Por padrão o formulário abre o WhatsApp com uma mensagem estruturada (nome, cidade, ambiente, área, observações).
-Para integrar com backend/CRM, defina `NEXT_PUBLIC_FORM_ENDPOINT`: o formulário passa a enviar um `POST`
-(multipart, com campo de fotos) para esse endereço. Sem endpoint, o upload de fotos fica oculto, porque o link
-`wa.me` não permite anexos; o formulário orienta o envio das fotos pelo WhatsApp.
+Após validar os campos, o formulário registra a conversão de orçamento do Google Ads e abre o WhatsApp
+com uma mensagem estruturada (nome, cidade, ambiente, área e observações). O envio não depende de endpoint;
+fotos podem ser enviadas pelo WhatsApp após o primeiro contato.
 
 ## Estrutura
 

@@ -21,8 +21,6 @@ export const site = {
   googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION ?? "BNTIs6jFzXoojC1aET2VAHivIkMU7SzfS2Gt4RWZ-II",
   /** Dados legais: só aparecem no rodapé quando preenchidos. */
   legal: { cnpj: "", address: "", city: "" },
-  /** Se preenchido, o formulário envia os dados (e fotos) para este endpoint antes de abrir o WhatsApp. */
-  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "",
   seo: {
     title: "Aplicação de Fulget no Local da Obra | NEXGRAN",
     description:

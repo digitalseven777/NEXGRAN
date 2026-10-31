@@ -2,18 +2,18 @@
 
 import { useRef, useState, type FormEvent } from "react";
 import { quote } from "@/config/content";
-import { site } from "@/config/site";
-import { track } from "@/lib/tracking";
+import { track, trackQuoteConversion } from "@/lib/tracking";
 import { quoteMessage, whatsappUrl } from "@/lib/whatsapp";
 import { WhatsAppIcon } from "./Icons";
 
-type Status = "idle" | "sending" | "done" | "error";
+type Status = "idle" | "done";
 
 export function QuoteForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [waLink, setWaLink] = useState("");
   const started = useRef(false);
-  const hasEndpoint = Boolean(site.formEndpoint);
+  const submitting = useRef(false);
+  const conversionSent = useRef(false);
 
   const onStart = () => {
     if (started.current) return;
@@ -21,8 +21,10 @@ export function QuoteForm() {
     track("form_start", { location: "orcamento" });
   };
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (submitting.current) return;
+
     const fd = new FormData(e.currentTarget);
     if (fd.get("empresa")) return; // honeypot
 
@@ -36,41 +38,30 @@ export function QuoteForm() {
     };
     const link = whatsappUrl(quoteMessage(data));
     setWaLink(link);
-    track("form_submit", { environment: data.ambiente, has_endpoint: hasEndpoint });
-
-    if (!hasEndpoint) {
-      window.open(link, "_blank", "noopener,noreferrer");
-      setStatus("done");
-      return;
+    submitting.current = true;
+    if (!conversionSent.current) {
+      conversionSent.current = true;
+      track("form_submit", { environment: data.ambiente });
+      trackQuoteConversion();
     }
-
-    setStatus("sending");
-    try {
-      const res = await fetch(site.formEndpoint, { method: "POST", body: fd });
-      if (!res.ok) throw new Error(String(res.status));
-      setStatus("done");
-    } catch {
-      setStatus("error");
-    }
+    setStatus("done");
+    window.open(link, "_blank", "noopener,noreferrer");
   }
 
-  if (status === "done" || status === "error") {
-    const failed = status === "error";
+  if (status === "done") {
     return (
       <div className="form-result" role="status">
-        <h3>{failed ? "Não foi possível enviar agora" : hasEndpoint ? "Informações recebidas" : "Abrimos o WhatsApp para você"}</h3>
-        <p>
-          {failed
-            ? "Seus dados não foram enviados. Você pode mandar as mesmas informações direto pelo WhatsApp."
-            : hasEndpoint
-              ? "A equipe da NEXGRAN vai entrar em contato para entender o projeto. Se quiser adiantar, continue pelo WhatsApp."
-              : "A mensagem já está preenchida com os dados do seu projeto. Se o WhatsApp não abriu, use o botão abaixo."}
-        </p>
+        <h3>Solicitação concluída</h3>
+        <p>Obrigado! Envie sua solicitação pelo nosso WhatsApp para continuarmos o atendimento.</p>
         <a className="btn btn--primary" href={waLink} target="_blank" rel="noopener noreferrer" onClick={() => track("click_whatsapp", { location: "form-result" })}>
           <WhatsAppIcon />
           Continuar pelo WhatsApp
         </a>
-        <button type="button" className="link-btn" onClick={() => setStatus("idle")}>
+        <button type="button" className="link-btn" onClick={() => {
+          submitting.current = false;
+          conversionSent.current = false;
+          setStatus("idle");
+        }}>
           Editar informações
         </button>
       </div>
@@ -113,14 +104,7 @@ export function QuoteForm() {
         <textarea id="mensagem" name="mensagem" rows={4} placeholder="Conte o que você pretende fazer, o estado atual da superfície, prazos desejados…" />
       </div>
 
-      {hasEndpoint ? (
-        <div className="field field--full">
-          <label htmlFor="fotos">Fotos da área (opcional)</label>
-          <input id="fotos" name="fotos" type="file" accept="image/*" multiple />
-        </div>
-      ) : (
-        <p className="field--full form-hint">{quote.photoHintWhatsapp}</p>
-      )}
+      <p className="field--full form-hint">{quote.photoHintWhatsapp}</p>
 
       <div className="hp" aria-hidden="true">
         <label htmlFor="empresa">Empresa</label>
@@ -128,8 +112,8 @@ export function QuoteForm() {
       </div>
 
       <div className="field--full form-actions">
-        <button type="submit" className="btn btn--primary" disabled={status === "sending"}>
-          {status === "sending" ? "Enviando…" : quote.submit}
+        <button type="submit" className="btn btn--primary" disabled={submitting.current}>
+          {quote.submit}
         </button>
       </div>
     </form>
